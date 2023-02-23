@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(232, 207, 207);
+  font-family: 'Shantell Sans', cursive;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header > a > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 180px;
+  margin-top: 25px;
+}
+
+/* menu bar */
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+  flex-flow: row wrap;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+  background-color: rgba(220, 188, 188, 0.5);
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(201, 13, 13);
+  font-size: 25px;
+  cursor: pointer;
+}
+nav li a:hover {
+  color: azure;
+  transition: 0.25s;
+}
+#active {
+  color: azure;
+}
+
+/* main content of the page */
+section {
+  display: flex;
+}
+article {
+  flex: 1;
+}
+
+.first-section {
+  background: url(../images/Hair_cut.jpg) no-repeat;
+  background-size: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 36px #544848;
+}
+
+.first-artical {
+  position: relative;
+}
+
+.celebrate-header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: rgb(201, 13, 13);
+  margin-left: 2rem;
+  line-height: 0.93;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(167, 164, 164, 0.285);
+  padding: 20px;
+  text-align: center;
+  color: azure;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 16px;
+}
+
+.second-section {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.all-artical {
+  padding: 20px;
+  box-shadow: 10px 10px 36px #544848;
+  margin-right: 10px;
+  border-radius: 25px;
+  max-height: 500px;
+  overflow: hidden;
+}
+.all-artical:hover {
+  overflow: visible;
+  max-height: fit-content;
+  transform: rotate3d(-20, 0, 2, 20deg);
+  transition: all linear 0.3s;
+}
+
+#second-artical {
+  background: url(../images/best-style-older-women-233263-1530712982841-main.700x0c.jpg) no-repeat;
+  background-size: cover;
+}
+#third-artical {
+  background: url(../images/Choosing.a.Hairstyle.2.jpg) no-repeat center;
+  background-size: cover;
+}
+#fourth-artical {
+  background: url(../images/promotions.jpg) no-repeat;
+  background-size: cover;
+}
+
+.head {
+  margin-bottom: 20px;
+  line-height: 0.95;
+  color: rgb(201, 13, 13);
+  font-weight: bold;
+  text-align: center;
+}
+.know-more, .know-more2, .know-more3 {
+  font-weight: bold;
+
+}
+
+@media screen and (max-width: 1369px) and (min-width: 898px) {
+  .know-more, .know-more2, .know-more3 {
+    color: black;
+    font-weight: bold;
+
+  }
+  .know-more2 {
+    margin-top: 0;
+  }
+  .know-more3, .know-more {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 897px) and (min-width: 859px){
+  .know-more, .know-more2, .know-more3 {
+    color: black;
+    font-weight: bold;
+
+  }
+  .know-more2 {
+    margin-top: 0;
+  }
+  .know-more3{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 858px) and (min-width: 769px) {
+  .know-more, .know-more2, .know-more3 {
+    color: black;
+    font-weight: bold;
+  }
+  .know-more2 {
+    margin-top: 0;
+  }
+  .know-more {
+    margin-top: 50px;
+  }
+  .know-more3 {
+    margin-top: 76px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 608px) {
+  .know-more, .know-more2, .know-more3 {
+    color: black;
+    font-weight: bold;
+  }
+  .know-more2 {
+    margin-top: 0;
+  }
+  .know-more {
+    margin-top: 48px;
+  }
+  .know-more3 {
+    margin-top: 77px;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  .know-more, .know-more2, .know-more3 {
+    color: black;
+    font-weight: bold;
+  }
+  .know-more2 {
+    margin-top: 0;
+  }
+  .know-more3 {
+    margin-top: 80px;
+  }
+}
+/* End Main */
+
+/* Footer */
+footer {
+  display: flex;
+  background-color: rgba(220, 188, 188);
+  padding: 30px;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer div img {
+  display: block;
+  width: 130px;
+  background-color: #463838;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-item {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: black;
+}
+/* End Footer */
